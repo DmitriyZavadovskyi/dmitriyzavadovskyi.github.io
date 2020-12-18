@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Task</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/second.css">
+    <Meta name="Author" content="Завадовский Дмитрий">
+    <link rel="shortcut icon" href="../img/icon.png" type="image/png">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="../js/script.js"></script>
+</head>
+<body>
+<div class="view">
+<!--Prieloader-->
+    <div class="preloader">
+        <div class="loader"></div>
+        <div class="counter"></div>
+    </div>
+
+    <div class="open">
+        <div class="wrapper">
+            <span class="welcome">Welcome</span>
+        </div>
+    </div>
+<!--Header-->    
+    <img src="../img/logo-anti-cafe-4-aqua.png" alt="logo" class="logo">
+    <input type="checkbox" name="" class="MenuIcon">
+    <span class="icon"></span>
+<!--Menu-->
+        <ul class="boxMenu">
+            <li class="variety"><a href="index.html" class="menu">Главная</a></li>
+            <li class="variety"><a href="index.html" class="menu">О нас</a></li>
+            <li class="variety"><a href="index.html" class="menu">Преимущества</a></li>
+            <li class="variety"><a href="#events" class="menu">Мероприятия</a></li>
+            <li class="variety"><a href="#price" class="menu">Прайс</a></li>
+            <li class="variety"><a href="#location" class="menu">Локация</a></li>
+            <li class="variety"><a href="#feedback" class="menu">Контакты</a></li>
+            <li class="variety"><a href="#webs" class="menu">Соц сети</a></li>
+        </ul>
+<!--Мероприятия-->
+    <section id="gallery">
+        <div class="titleText">
+            <h3 class="title">Мероприятия</h3>
+            <p class="text">
+                Наша команда, каждыйкрупный праздник устраивает мероприятия в которых кажды может поучавствовать. А иногда нам даже не требуется повод, и мы устраиваем различные мероприятния, например: вечер кино (каждую субботу)
+            </p>
+        </div>    
+        <div class="slider">
+    <div class="item">
+        <img src="../img/newYear.jpg" alt="Первый слайд">
+        <div class="slideText">Новый год</div>
+    </div>
+
+    <div class="item">
+        <img src="../img/mafia.jpg" alt="Второй слайд">
+        <div class="slideText">Мафия</div>
+    </div>
+
+    <div class="item">
+        <img src="../img/helloween.png" alt="Третий слайд">
+        <div class="slideText">Хелоуин</div>
+    </div>
+        <div class="item">
+        <img src="../img/kino.jpg" alt="Четвертий слайд">
+        <div class="slideText">Вечер кино</div>
+    </div>
+
+        <a class="prev" onclick="minusSlide()">&#10094;</a>
+        <a class="next" onclick="plusSlide()">&#10095;</a>
+    </div>
+
+    <div class="slider-dots">
+        <span class="slider-dots_item" onclick="currentSlide(1)"></span> 
+        <span class="slider-dots_item" onclick="currentSlide(2)"></span> 
+        <span class="slider-dots_item" onclick="currentSlide(3)"></span>
+        <span class="slider-dots_item" onclick="currentSlide(4)"></span>
+    </div>
+    </section>
+<!--Прайс-->
+    <section class="price" id="price">
+                <h3 class="title">Прайс</h3>
+                    <div class="warp">
+                    <div class="block-states">
+                        <h3 class="services">
+                            Cтандарт "Почасовая опалата"
+                        </h3>
+                        <div class="custom-border">
+                        <p class="info">
+                            Пакет услуг, включающий в себя все виды предоставляемых услуг. Термин действия пакета услуг — 1 час.
+                        </p>
+                            <a href="" class="cost">45 грн</a>
+                        </div>
+                    </div>
+                    <div class="block-states">
+                        <h3 class="services">
+                            Абонимент "Время отдохнуть"
+                        </h3>
+                        <div class="custom-border">
+                        <p class="info">
+                            Пакет услуг, включающий в себя все виды предоставляемых услуг. Возможность свободного посещения в любое время дня и ночи в течении 12 часов которые указаны в абонименте.
+                        </p>
+                        <a href="" class="cost">350 грн</a>
+                        </div>
+                    </div>
+                    <div class="block-states">
+                        <h3 class="services">
+                            Абонимент "Сегодня не до сна"
+                        </h3>
+                        <div class="custom-border">
+                        <p class="info">
+                            Пакет услуг, включающий в себя все виды предоставляемых услуг. Возможность свободного посещения в любое время дня и ночи в течении 24 часов которые указаны в абонименте.
+                        </p>
+                        <a href="" class="cost">700 грн</a>
+                        </div>
+                    </div>
+                </div>
+    </section>
+<!--Локация-->
+    <section class="location" id="location">
+        <h3 class="title">Мы здась</h3>
+            <div class="there">
+                <iframe class ="loca" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8628.66330343399!2d36.20014673068786!3d49.98666694622109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a09f63ab0f8b%3A0x2d4c18681aa4be0a!2z0KXQsNGA0YzQutC-0LIsINCl0LDRgNGM0LrQvtCy0YHQutCw0Y8g0L7QsdC70LDRgdGC0Yw!5e0!3m2!1sru!2sua!4v1608247282196!5m2!1sru!2sua" frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+    </section>
+<!--Контакты-->
+    <section class="sect" id="feedback">
+        <div class="ditails">
+            <div class="talk">
+                <h3 class="title">Обратная связь</h3>
+            </div>
+            <div class="contactForm">
+                <form>
+                    <div class="row">
+                        <div class="inputBox1">
+                            <input type="text" name="" placeholder="Full Name">
+                        </div>
+
+                        <div class="inputBox1">
+                            <input type="text" name="" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="inputBox">
+                            <textarea placeholder="Message"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="inpitBox">
+                            <input type="sumbit" name="" value="Send">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+<!--Footer-->
+<section class="bottom" id="webs">
+    <h3 class="title">Социальные Сети</h3>
+    <ul class="box">
+        <li class="segments">
+            <a class="link" href="facebook.org">
+                <img src="../img/facebook.png" class="ico">
+            </a>
+        </li>
+        <li class="segments">
+            <a class="link" href="instagram.com">
+                <img src="../img/instagram.png" class="ico">
+            </a>
+        </li>
+        <li class="segments">
+            <a class="link" href="telegram.org">
+                <img src="../img/telegram.png" class="ico">
+            </a>
+        </li>
+    </ul>
+    <a class="quest" href="new.html">!</a>
+</section>
+    </div>
+    <script scr ="http://code.jcuery.com/jquery-3.3.1.min.js"></script>
+</body>
+</html>

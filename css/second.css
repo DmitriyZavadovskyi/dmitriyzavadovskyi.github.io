@@ -1,0 +1,285 @@
+/*
+---------------------------------------------------------
+----------------------Gallery----------------------------
+---------------------------------------------------------
+*/
+#gallery {
+    min-height: 100vh;
+}
+/* Собственно сам слайдер */
+.slider{
+    max-width: 90%;
+    position: relative;
+    margin: auto;
+    height: 500px;
+    margin-bottom: 15px;
+}
+/* Картинка мастабируется по отношению к родительскому элементу */
+.slider .item img {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 500px;
+    box-shadow: none !important;
+}
+/* Кнопки вперед и назад */
+.slider .prev, .slider .next {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+.slider .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+/* При наведении на кнопки добавляем фон кнопок */
+.slider .prev:hover,
+.slider .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+/* Заголовок слайда */
+.slideText {
+    position: absolute;
+    border: 2px solid crimson;
+    background: green;
+    color: #fff;
+    font-size: 35px;
+    /* Выравнивание текста по горизонтали и по вертикали*/
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /* Тень*/
+    text-shadow: 1px 1px 1px #000, 0 0 1em #000;
+}
+/* Кружочки */
+.slider-dots {
+    text-align: center;
+}
+.slider-dots_item{
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    margin: 0 2px;
+    background-color: #ddd;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active,
+.slider-dots_item:hover {
+    background-color: #aaa;
+}
+/* Анимация слайдов */
+.slider .item {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+/*
+--------------------------------------------------------
+-----------------------Прайс-------------------------
+--------------------------------------------------------
+*/
+.price {
+    margin: 0;
+    padding: 0;
+    min-height: 80vh;
+}
+
+.warp
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vw;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 30px;
+}
+
+.block-states
+{
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(at top, #fff, aqua);
+    margin: 20px 30px;
+    padding: 30px;
+    position: relative;
+}
+
+.block-states .services {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17pt;
+    margin: 10px 0;
+}
+
+.custom-border {
+    position: relative;
+    background: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 80%;
+    background: #fff;
+    border: 2px solid red;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.8);
+}
+
+.block-states .custom-border .info {
+    position: relative;
+    font-size: 12pt;
+    color: saddlebrown;
+}
+
+.block-states .custom-border .cost{
+    margin: 15px 0 0;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 700;
+    color: #000;
+    padding: 5px;
+    border: 1px solid #333;
+}
+
+.block-states .custom-border .cost:hover{
+    background: linear-gradient(90deg, #8000ff, #00ffff);
+    color: #fff;
+}
+
+/*
+--------------------------------------------------------
+-----------------------Локация-------------------------
+--------------------------------------------------------
+*/
+
+.there {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.location .loca {
+    top: 0;
+    left: 0;
+    width: 600px;
+    height: 450px;
+    border: 6px solid #000;
+    border-radius: 15px;
+}
+/*
+--------------------------------------------------------
+-----------------------Контакт-------------------------
+--------------------------------------------------------
+*/
+.sect {
+    background: #000;
+    padding: 100px;
+    min-height: 100vh;
+}
+.sect .ditails{
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+ .contactForm {
+    position: relative;
+    width: 50vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactForm form {
+    width: 100%;
+}
+
+.contactForm .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.contactForm .row .inputBox1{
+    width: 50%;
+    margin: 0 20px;
+}
+
+.contactForm .row .inputBox{
+    width: 100%;
+    margin: 0 20px;
+}
+
+.contactForm .row input,
+.contactForm .row textarea {
+    position: relative;
+    border: none;
+    border-bottom: 1px solid skyblue;
+    color: skyblue;
+    background: transparent;
+    width: 100%;
+    padding: 10px 0;
+    outline: none;
+    font-size: 18px;
+    font-weight: 300;
+    margin: 20px 0;
+    resize: none;
+}
+
+.contactForm .row textarea {
+    height: 100px;
+    width: 100%;
+}
+
+.contactForm .row input:placeholder,
+.contactForm .row textarea:placeholder {
+    color: rgba(135,206,235,.5);
+}
+
+.contactForm .row input[type="sumbit"]
+{
+    background: #fff;
+    color: #000;
+    max-width: 100px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    font-weight: 500;
+    text-align: center;
+    
+}
